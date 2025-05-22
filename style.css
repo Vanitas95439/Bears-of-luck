@@ -1,0 +1,102 @@
+/* === БАЗОВЫЕ СБРОСЫ === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffbe6;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* === ОБЩАЯ СТРУКТУРА === */
+header,
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffefbf;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+/* === СЕКЦИИ === */
+section {
+  width: 100%;
+  text-align: center;
+}
+
+/* === СПИСКИ === */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 80px 0;
+  padding: 20px;
+  background-color: #fff9e6;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* === ТЕКСТ === */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0 10px;
+}
+
+/* === СКРОЛЛ-ЭФФЕКТ === */
+.scroll-item {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  will-change: transform, opacity;
+}
+
+/* === ТАЙМЕР === */
+#timer_div {
+  margin: 30px 0;
+  text-align: center;
+}
+
+#timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* === ФУТЕР === */
+footer {
+  margin-top: 100px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #ffefbf;
+  padding: 30px;
+  border-top: 2px solid #ffdd99;
+}
