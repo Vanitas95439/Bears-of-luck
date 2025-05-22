@@ -6,8 +6,10 @@ window.addEventListener("scroll", () => {
     const rect = el.getBoundingClientRect();
     const distance = Math.abs(rect.top + rect.height / 2 - centerY);
 
-    const maxScale = 1.5;
+    const isMobile = window.innerWidth <= 600;
+    const maxScale = isMobile ? 1.1 : 1.5;
     const minScale = 0.7;
+
     const scale = Math.max(
       minScale,
       maxScale - (distance / centerY) * (maxScale - minScale)

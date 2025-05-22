@@ -46,7 +46,7 @@ ul {
 }
 
 ul li {
-  margin: 80px 0;
+  margin: 80px 0 !important;
   padding: 20px;
   background-color: #fff9e6;
   border-radius: 12px;
@@ -78,17 +78,12 @@ p {
 .scroll-item {
   transition: transform 0.3s ease, opacity 0.3s ease;
   will-change: transform, opacity;
-}
 
-/* === ТАЙМЕР === */
-#timer_div {
-  margin: 30px 0;
-  text-align: center;
-}
-
-#timer {
-  font-size: 1.5rem;
-  font-weight: bold;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fff9e6;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* === ФУТЕР === */
@@ -99,4 +94,54 @@ footer {
   background-color: #ffefbf;
   padding: 30px;
   border-top: 2px solid #ffdd99;
+}
+
+@media screen and (max-width: 600px) {
+  header,
+  footer {
+    font-size: 1.2rem;
+    padding: 30px 10px;
+  }
+
+  main {
+    padding: 40px 10px;
+    gap: 30px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    padding: 0 5px;
+  }
+
+  ul li,
+  .scroll-item {
+    margin: 40px 0 !important;
+    padding: 15px;
+  }
+
+  .scroll-item {
+    transform-origin: center center;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    margin: 30px 0 !important;
+    padding: 15px;
+  }
+
+  ul li.scroll-item {
+    margin: 30px 0 !important;
+    padding: 15px;
+  }
 }
