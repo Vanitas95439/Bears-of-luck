@@ -7,8 +7,8 @@ window.addEventListener("scroll", () => {
     const distance = Math.abs(rect.top + rect.height / 2 - centerY);
 
     const isMobile = window.innerWidth <= 600;
-    const maxScale = 1;
-    const minScale = 0.2;
+    const maxScale = 1.2;
+    const minScale = 0.4;
 
     const scale = Math.max(
       minScale,
